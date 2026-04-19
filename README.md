@@ -11,12 +11,15 @@ Set up ESP32 and Arduino enviornment. Execute sketch " Wifiscanner".
 
 ## Links to documentation and tools
 https://lastminuteengineers.com/getting-started-with-esp32-cam/
-https://lastminuteengineers.com/esp32-arduino-ide-tutorial/
+
 ##### Video 1: 
 
 ##### Other Links: 
-
-##### AI GPTs used
+https://lastminuteengineers.com/esp32-arduino-ide-tutorial/
+##### AI GPTs used:
+Google
+Claude
+ChatGPT
 
 ## Steps I followed
 Setting Up the Arduino IDE
@@ -53,16 +56,20 @@ Accessing the Video Streaming Server
 After uploading the sketch, open the Serial Monitor and make sure the baud rate is set to 115200. Then press the Reset button on your ESP32-CAM. If everything is working correctly, the ESP32 will connect to your Wi-Fi network and print out a message that says “Camera Ready!” along with the IP address that your router assigned to your ESP32-CAM
 
 Now, open a web browser on your computer or phone and type in the IP address. Just make sure your device is connected to the same Wi-Fi network as the ESP32-CAM, or you won’t be able to reach it.
-## Problems and Solutions
-Note your problems or errors here.  Google any error you may come across, and not what you tried (even if it does not work), and what was the final answer. Document your errors and solutions that worked for you.  
 
 You should see a web page hosted by the ESP32-CAM. To start watching the live video feed from your camera, simply click the “Start Stream” button.
 On the left side of the web page, you’ll find various camera controls. You can adjust settings such as resolution, frame rate, brightness, contrast, and saturation to customize your video feed.
 If you want to capture a single photo, just click the “Get Still” button. Keep in mind that when you do this, the image gets downloaded directly to your computer rather than being saved to the microSD card in the ESP32-CAM.
+## Problems and Solutions
+Note your problems or errors here.  Google any error you may come across, and not what you tried (even if it does not work), and what was the final answer. Document your errors and solutions that worked for you.  
 
-**Problem:** E (485) camera: Camera probe failed with error 0x105(ESP_ERR_NOT_FOUND)
-Camera init failed with error 0x105
+
+**Problem:** ESP32 does not connect to my Wi-Fi network
 **Solution:**
+• Make sure WiFi router is powered on and nearby
+• ESP32 antenna may be blocked - ensure nothing is covering the board
+• Try moving ESP32-CAM to different location closer to WiFi sources
+• Check if the code uploaded successfully without errors
 
 ### Example Problem
 **Problem:** Arduino code will not load on ESP32 Cam.
