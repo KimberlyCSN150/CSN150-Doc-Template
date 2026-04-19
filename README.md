@@ -68,10 +68,21 @@ Note your problems or errors here.  Google any error you may come across, and no
 
 **Solution:**
 
-• Make sure WiFi router is powered on and nearby
-• ESP32 antenna may be blocked - ensure nothing is covering the board
-• Try moving ESP32-CAM to different location closer to WiFi sources
-• Check if the code uploaded successfully without errors
+1. Wrong WiFi band (this is #1 by far)
+
+Your ESP32-CAM only supports 2.4 GHz.
+
+If your router:
+
+Uses the same SSID for 2.4 + 5 GHz
+Or auto-steers devices
+
+→ The ESP32 will just sit there “connecting” forever.
+
+Fix:
+
+Split your SSIDs (e.g., MyWiFi_2G and MyWiFi_5G)
+Connect the ESP32 to the 2.4 GHz one
 
 
 
