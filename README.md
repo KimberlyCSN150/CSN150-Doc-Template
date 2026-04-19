@@ -65,14 +65,14 @@ Note your problems or errors here.  Google any error you may come across, and no
 
 
 **Problem:** ESP32 does not connect to my Wi-Fi network
+
 **Solution:**
+
 • Make sure WiFi router is powered on and nearby
 • ESP32 antenna may be blocked - ensure nothing is covering the board
 • Try moving ESP32-CAM to different location closer to WiFi sources
 • Check if the code uploaded successfully without errors
 
-### Example Problem
-**Problem:** Arduino code will not load on ESP32 Cam.
-**Solution:** Camera drivers were incorrect I needed to install the driver: [https://www.wch-ic.com/downloads/CH341SER_ZIP.html](https://github.com/martin-ger/esp32_nat_router).  I used file, "CH341SER.ZIP" and it worked.
+
 
 ## Final Report
