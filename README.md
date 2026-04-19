@@ -64,7 +64,7 @@ If you want to capture a single photo, just click the “Get Still” button. Ke
 Note your problems or errors here.  Google any error you may come across, and not what you tried (even if it does not work), and what was the final answer. Document your errors and solutions that worked for you.  
 
 
-**Problem:** ESP32 does not connect to my Wi-Fi network
+**Problem:** ESP32 does not connect to my Wi-Fi network/Live Stream does not display an image from my ESPR32CAM but is connected to my WiFi correctly.
 
 **Solution:**
 
